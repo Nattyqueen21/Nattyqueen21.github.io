@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url(http://susiecakes.com/app/uploads/2016/01/SC-menu-mini-cupcakes.jpg);
+      background-size: cover;
+      color: purple;
+    }
+    a {
+      color: Blue;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="/assets/Natty.png">
+    <h1>Natty's Blog</h1>
+    <ul>
+      <li><a href="#">Cupcakes</a></li>
+      <li><a href="#">Sweets</a></li>
+      <li><a href="#">The best?</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2> Cupcakes</h2>
+    <p>Cupcakes are the best! They are the most delightful. There sweet treats that is the key to ones heart. Whether there small or big, chocolate or vanilla, they are all the best!</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Chocolate Cupcakes</h2>
+    <p>With there incredible rich taste, they are the ideal to buy.Many aren't a fan of chocolate, and would rather vanilla, but those who do, know that chocolate is the best to use, especially in cakes. With there dark color, and appealing taste, everyone should get them!
+    </p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Why should we buy cupcakes?</h2>
+    <p> Cupcakes are a savoring treat for everyone. They offer the little sweetness everyone is missing in their life. So what are you waiting for, get on up and go get a cupcake right now. I promise you wont regret it!
+    </p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
